@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B929BFF81ED8ABF900307E5E /* RestablecerPswdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B929BFF71ED8ABF900307E5E /* RestablecerPswdViewController.swift */; };
 		B987A1AB1ED74CAB001481F9 /* EntrenamientoLibreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B987A1AA1ED74CAB001481F9 /* EntrenamientoLibreViewController.swift */; };
 		B9A526C71ED4C0B4009440E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A526C61ED4C0B4009440E0 /* AppDelegate.swift */; };
 		B9A526C91ED4C0B4009440E0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A526C81ED4C0B4009440E0 /* ViewController.swift */; };
@@ -77,6 +78,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B929BFF71ED8ABF900307E5E /* RestablecerPswdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestablecerPswdViewController.swift; sourceTree = "<group>"; };
 		B987A1AA1ED74CAB001481F9 /* EntrenamientoLibreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntrenamientoLibreViewController.swift; sourceTree = "<group>"; };
 		B9A526C31ED4C0B4009440E0 /* Ufit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ufit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9A526C61ED4C0B4009440E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -191,6 +193,7 @@
 				B9A526C61ED4C0B4009440E0 /* AppDelegate.swift */,
 				B9A526C81ED4C0B4009440E0 /* ViewController.swift */,
 				B9A527351ED4C2DB009440E0 /* LoginViewController.swift */,
+				B929BFF71ED8ABF900307E5E /* RestablecerPswdViewController.swift */,
 				B9A527371ED4C3ED009440E0 /* HomeViewController.swift */,
 				B9BF93051ED60BF300A1A6E7 /* CheckInViewController.swift */,
 				B9A5273D1ED4DD52009440E0 /* MisLogrosViewController.swift */,
@@ -490,6 +493,7 @@
 				B9A527461ED4DD52009440E0 /* PerfilViewController.swift in Sources */,
 				B9A527471ED4DD52009440E0 /* ProgresoViewController.swift in Sources */,
 				B9BF93061ED60BF300A1A6E7 /* CheckInViewController.swift in Sources */,
+				B929BFF81ED8ABF900307E5E /* RestablecerPswdViewController.swift in Sources */,
 				B9A526F71ED4C0CB009440E0 /* SWRevealViewController.m in Sources */,
 				B9A527441ED4DD52009440E0 /* EntrenamientoViewController.swift in Sources */,
 				B987A1AB1ED74CAB001481F9 /* EntrenamientoLibreViewController.swift in Sources */,
