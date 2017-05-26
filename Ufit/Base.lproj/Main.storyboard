@@ -10,6 +10,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="Lato-Black.ttf">
+            <string>Lato-Black</string>
+        </array>
         <array key="Lato-Bold.ttf">
             <string>Lato-Bold</string>
         </array>
@@ -37,7 +40,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Nombre de usuario" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="M91-dw-46N" customClass="MyTextField" customModule="Ufit" customModuleProvider="target">
-                                        <rect key="frame" x="40" y="353" width="295" height="45"/>
+                                        <rect key="frame" x="40" y="369" width="295" height="45"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="45" id="bh8-Qk-dEa"/>
                                         </constraints>
@@ -63,14 +66,14 @@
                                             <segue destination="UpU-KW-ntD" kind="presentation" id="2b1-Ej-0d5"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¿OLVIDASTE TU CONTRASEÑA?" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u5x-92-s1C">
-                                        <rect key="frame" x="133" y="459" width="202" height="16"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u5x-92-s1C">
+                                        <rect key="frame" x="335" y="475" width="0.0" height="0.0"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kl1-5K-1JU" customClass="MyTextField" customModule="Ufit" customModuleProvider="target">
-                                        <rect key="frame" x="40" y="406" width="295" height="45"/>
+                                        <rect key="frame" x="40" y="422" width="295" height="45"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="45" id="XRD-RU-Vl5"/>
                                         </constraints>
@@ -78,9 +81,20 @@
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zwk-xv-tsA">
+                                        <rect key="frame" x="129" y="475" width="206" height="29"/>
+                                        <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="14"/>
+                                        <state key="normal" title="¿OLVIDASTE TU CONTRASEÑA?">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="6e7-Ee-u3c" kind="show" id="EYv-6N-Itq"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="7UA-Qt-xdE" secondAttribute="bottom" constant="60" id="AmC-kG-XVD"/>
+                                    <constraint firstItem="zwk-xv-tsA" firstAttribute="top" secondItem="Kl1-5K-1JU" secondAttribute="bottom" constant="8" id="B8a-Od-SGy"/>
                                     <constraint firstItem="EC7-Rh-ldJ" firstAttribute="centerX" secondItem="BQW-W6-abl" secondAttribute="centerX" constant="-6" id="Erv-qs-DV6"/>
                                     <constraint firstItem="7UA-Qt-xdE" firstAttribute="centerX" secondItem="BQW-W6-abl" secondAttribute="centerX" id="FsK-8W-HxY"/>
                                     <constraint firstAttribute="trailing" secondItem="Kl1-5K-1JU" secondAttribute="trailing" constant="40" id="I8o-au-IZE"/>
@@ -89,6 +103,7 @@
                                     <constraint firstItem="7UA-Qt-xdE" firstAttribute="top" secondItem="u5x-92-s1C" secondAttribute="bottom" constant="89" id="XHs-vb-7Ra"/>
                                     <constraint firstAttribute="trailing" secondItem="M91-dw-46N" secondAttribute="trailing" constant="40" id="XQW-cd-Pme"/>
                                     <constraint firstItem="M91-dw-46N" firstAttribute="centerX" secondItem="BQW-W6-abl" secondAttribute="centerX" id="bIZ-11-NK3"/>
+                                    <constraint firstItem="zwk-xv-tsA" firstAttribute="trailing" secondItem="Kl1-5K-1JU" secondAttribute="trailing" id="bfM-oU-5mD"/>
                                     <constraint firstItem="EC7-Rh-ldJ" firstAttribute="top" secondItem="BQW-W6-abl" secondAttribute="top" constant="180" id="kaU-oh-DGh"/>
                                     <constraint firstItem="u5x-92-s1C" firstAttribute="trailing" secondItem="Kl1-5K-1JU" secondAttribute="trailing" id="oAZ-fI-LeD"/>
                                     <constraint firstItem="M91-dw-46N" firstAttribute="leading" secondItem="BQW-W6-abl" secondAttribute="leading" constant="40" id="r5K-if-dV2"/>
@@ -117,7 +132,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vQZ-Y6-mgK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="718" y="-142"/>
+            <point key="canvasLocation" x="458" y="-752"/>
         </scene>
         <!--Reveal View Controller-->
         <scene sceneID="8ra-hN-Udu">
@@ -140,7 +155,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QFG-Cp-tZg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1432" y="-143"/>
+            <point key="canvasLocation" x="1290" y="-751"/>
         </scene>
         <!--Main Menu View Controller-->
         <scene sceneID="iBk-2q-Hca">
@@ -166,8 +181,8 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bhM-KC-vlH">
-                                <rect key="frame" x="36" y="200" width="48" height="30"/>
-                                <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="15"/>
+                                <rect key="frame" x="36" y="200" width="45" height="29"/>
+                                <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="14"/>
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="INICIO"/>
                                 <connections>
@@ -175,8 +190,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="26u-DP-eXY">
-                                <rect key="frame" x="36" y="240" width="90" height="30"/>
-                                <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="15"/>
+                                <rect key="frame" x="36" y="239" width="84" height="29"/>
+                                <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="14"/>
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="MIS LOGROS"/>
                                 <connections>
@@ -184,17 +199,17 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mTk-VV-khx">
-                                <rect key="frame" x="36" y="280" width="140" height="30"/>
-                                <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="15"/>
+                                <rect key="frame" x="36" y="278" width="120" height="29"/>
+                                <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="14"/>
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="ENTRETENIMIENTO"/>
+                                <state key="normal" title="ENTRENAMIENTO"/>
                                 <connections>
                                     <segue destination="XAu-oR-4GV" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="Nhu-nn-43S"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CRx-Oc-elc">
-                                <rect key="frame" x="36" y="320" width="81" height="30"/>
-                                <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="15"/>
+                                <rect key="frame" x="36" y="317" width="75" height="29"/>
+                                <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="14"/>
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="PROGRESO"/>
                                 <connections>
@@ -202,8 +217,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UnC-7u-Xts">
-                                <rect key="frame" x="36" y="360" width="54" height="30"/>
-                                <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="15"/>
+                                <rect key="frame" x="36" y="356" width="50" height="29"/>
+                                <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="14"/>
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="CLASES"/>
                                 <connections>
@@ -211,8 +226,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="70N-2o-kIB">
-                                <rect key="frame" x="36" y="400" width="84" height="30"/>
-                                <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="15"/>
+                                <rect key="frame" x="36" y="395" width="79" height="29"/>
+                                <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="14"/>
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="NUTRICIÓN"/>
                                 <connections>
@@ -220,8 +235,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="glf-iV-4W8">
-                                <rect key="frame" x="36" y="440" width="49" height="30"/>
-                                <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="15"/>
+                                <rect key="frame" x="36" y="434" width="46" height="29"/>
+                                <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="14"/>
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="PERFIL"/>
                                 <connections>
@@ -229,8 +244,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jNT-7F-0W4">
-                                <rect key="frame" x="36" y="480" width="52" height="30"/>
-                                <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="15"/>
+                                <rect key="frame" x="36" y="473" width="49" height="29"/>
+                                <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="14"/>
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="AYUDA"/>
                                 <connections>
@@ -238,8 +253,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qd6-wW-Ahf">
-                                <rect key="frame" x="36" y="520" width="137" height="30"/>
-                                <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="15"/>
+                                <rect key="frame" x="36" y="512" width="128" height="29"/>
+                                <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="14"/>
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="RECOMIENDA UFIT"/>
                                 <connections>
@@ -247,12 +262,15 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lyB-Rs-kWp">
-                                <rect key="frame" x="36" y="590" width="115" height="30"/>
-                                <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="15"/>
+                                <rect key="frame" x="36" y="551" width="107" height="29"/>
+                                <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="14"/>
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="CERRAR SESIÓN">
                                     <color key="titleColor" red="0.86666666670000003" green="0.98823529409999999" blue="0.20392156859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="fDy-bt-9oE" kind="show" id="Jk3-0e-9Ku"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sofía Torres" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fZZ-BL-sDM">
                                 <rect key="frame" x="146" y="95" width="90" height="21"/>
@@ -271,7 +289,7 @@
                         <constraints>
                             <constraint firstItem="8fb-79-cRf" firstAttribute="top" secondItem="fZZ-BL-sDM" secondAttribute="bottom" constant="2" id="0PH-Ak-5fd"/>
                             <constraint firstItem="jNT-7F-0W4" firstAttribute="leading" secondItem="H2B-75-x9P" secondAttribute="leadingMargin" constant="20" id="59g-Rg-lYg"/>
-                            <constraint firstItem="lyB-Rs-kWp" firstAttribute="top" secondItem="qd6-wW-Ahf" secondAttribute="bottom" constant="40" id="8VS-KB-CLy"/>
+                            <constraint firstItem="lyB-Rs-kWp" firstAttribute="top" secondItem="qd6-wW-Ahf" secondAttribute="bottom" constant="10" id="8VS-KB-CLy"/>
                             <constraint firstItem="26u-DP-eXY" firstAttribute="leading" secondItem="H2B-75-x9P" secondAttribute="leadingMargin" constant="20" id="CZm-Hh-lkN"/>
                             <constraint firstItem="fZZ-BL-sDM" firstAttribute="centerY" secondItem="kPO-XW-6oy" secondAttribute="centerY" id="EBa-5n-B8g"/>
                             <constraint firstItem="glf-iV-4W8" firstAttribute="leading" secondItem="H2B-75-x9P" secondAttribute="leadingMargin" constant="20" id="ESS-hU-aUV"/>
@@ -304,7 +322,94 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tBb-Yu-DTT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2197" y="-144"/>
+            <point key="canvasLocation" x="2140" y="-751"/>
+        </scene>
+        <!--Restablecer Pswd View Controller-->
+        <scene sceneID="da3-J1-XoY">
+            <objects>
+                <viewController id="6e7-Ee-u3c" customClass="RestablecerPswdViewController" customModule="Ufit" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mGy-OH-XAc"/>
+                        <viewControllerLayoutGuide type="bottom" id="igH-rd-9pb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5yq-z4-yXd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg-login.png" translatesAutoresizingMaskIntoConstraints="NO" id="YdC-Pv-yWj">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo-ufit.png" translatesAutoresizingMaskIntoConstraints="NO" id="45D-kn-sKn">
+                                <rect key="frame" x="118" y="160" width="138" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="138" id="ATM-nv-b2F"/>
+                                    <constraint firstAttribute="height" constant="55" id="hhW-k9-fCP"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vsw-KA-mlk">
+                                <rect key="frame" x="36" y="426" width="303" height="34"/>
+                                <string key="text">INGRESA TU CORREO ELECTRÓNICO
+PARA RESTABLECER TU CONTRASEÑA</string>
+                                <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yRp-hi-pzM">
+                                <rect key="frame" x="41" y="544" width="293" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="293" id="JgK-Oj-JlF"/>
+                                    <constraint firstAttribute="height" constant="43" id="Lxd-Ja-TSe"/>
+                                </constraints>
+                                <state key="normal" image="boton-ingresar.png"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D52-cP-ZGj">
+                                <rect key="frame" x="287" y="20" width="68" height="33"/>
+                                <fontDescription key="fontDescription" name="Lato-Black" family="Lato" pointSize="17"/>
+                                <state key="normal" title="CERRAR">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="fDy-bt-9oE" kind="show" id="CNO-oW-Hza"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="E-mail" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zvD-xk-OAE" customClass="MyTextField" customModule="Ufit" customModuleProvider="target">
+                                <rect key="frame" x="36" y="480" width="303" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="eMM-0e-BUx"/>
+                                </constraints>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="zvD-xk-OAE" firstAttribute="leading" secondItem="5yq-z4-yXd" secondAttribute="leadingMargin" constant="20" id="DZS-4a-Avj"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="vsw-KA-mlk" secondAttribute="trailing" constant="20" id="EbB-DI-nf9"/>
+                            <constraint firstItem="igH-rd-9pb" firstAttribute="top" secondItem="yRp-hi-pzM" secondAttribute="bottom" constant="80" id="IyP-PI-0Pd"/>
+                            <constraint firstAttribute="trailing" secondItem="D52-cP-ZGj" secondAttribute="trailing" constant="20" id="LwR-Fq-aKP"/>
+                            <constraint firstItem="YdC-Pv-yWj" firstAttribute="width" secondItem="5yq-z4-yXd" secondAttribute="width" id="MfM-d0-ZH1"/>
+                            <constraint firstItem="vsw-KA-mlk" firstAttribute="leading" secondItem="5yq-z4-yXd" secondAttribute="leadingMargin" constant="20" id="OZo-74-bJB"/>
+                            <constraint firstItem="yRp-hi-pzM" firstAttribute="centerX" secondItem="5yq-z4-yXd" secondAttribute="centerX" id="RvO-lk-ELW"/>
+                            <constraint firstItem="YdC-Pv-yWj" firstAttribute="centerY" secondItem="5yq-z4-yXd" secondAttribute="centerY" id="VGz-St-5g6"/>
+                            <constraint firstItem="yRp-hi-pzM" firstAttribute="top" secondItem="zvD-xk-OAE" secondAttribute="bottom" constant="19" id="VXU-74-6Jg"/>
+                            <constraint firstItem="D52-cP-ZGj" firstAttribute="top" secondItem="5yq-z4-yXd" secondAttribute="top" constant="20" id="bVK-zl-hVk"/>
+                            <constraint firstItem="zvD-xk-OAE" firstAttribute="centerX" secondItem="5yq-z4-yXd" secondAttribute="centerX" id="fwO-Wj-0Iz"/>
+                            <constraint firstItem="45D-kn-sKn" firstAttribute="centerX" secondItem="5yq-z4-yXd" secondAttribute="centerX" id="mq2-Te-Gn9"/>
+                            <constraint firstItem="YdC-Pv-yWj" firstAttribute="centerX" secondItem="5yq-z4-yXd" secondAttribute="centerX" id="oZb-S7-JFB"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="zvD-xk-OAE" secondAttribute="trailing" constant="20" id="qdy-gw-y4W"/>
+                            <constraint firstItem="YdC-Pv-yWj" firstAttribute="height" secondItem="5yq-z4-yXd" secondAttribute="height" id="rTZ-m4-Viv"/>
+                            <constraint firstItem="zvD-xk-OAE" firstAttribute="top" secondItem="vsw-KA-mlk" secondAttribute="bottom" constant="20" id="tiy-br-pRX"/>
+                            <constraint firstItem="45D-kn-sKn" firstAttribute="top" secondItem="mGy-OH-XAc" secondAttribute="bottom" constant="140" id="zJ5-6Z-LqY"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="email" destination="zvD-xk-OAE" id="icD-aI-2Sg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bge-TZ-Svp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="13.6" y="-49.025487256371818"/>
         </scene>
         <!--AYUDA-->
         <scene sceneID="frp-Cl-xQO">
@@ -537,7 +642,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6mV-K4-lG2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-207" y="925"/>
+            <point key="canvasLocation" x="-286" y="806"/>
         </scene>
         <!--Check In View Controller-->
         <scene sceneID="bmq-0n-3os">
@@ -660,7 +765,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TAB-hO-Dof" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="623" y="926"/>
+            <point key="canvasLocation" x="457" y="968"/>
         </scene>
         <!--MIS LOGROS-->
         <scene sceneID="gWy-l4-2zi">
@@ -678,8 +783,41 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="6TP-kQ-KVn">
+                                <rect key="frame" x="8" y="72" width="359" height="587"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="k0R-Sc-aMh">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="7rx-f1-QnB" customClass="LogrosCollectionViewCell" customModule="Ufit" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gBp-9V-sOh">
+                                                    <rect key="frame" x="2" y="0.0" width="46" height="50"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" title="Button"/>
+                                                </button>
+                                            </subviews>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6TP-kQ-KVn" firstAttribute="leading" secondItem="uud-l6-hXR" secondAttribute="leading" constant="8" id="7mQ-sU-cy5"/>
+                            <constraint firstItem="rPH-hV-8Hc" firstAttribute="top" secondItem="6TP-kQ-KVn" secondAttribute="bottom" constant="8" id="EhA-5O-ngl"/>
+                            <constraint firstItem="6TP-kQ-KVn" firstAttribute="top" secondItem="ChT-A8-Ge0" secondAttribute="bottom" constant="8" id="k2Z-ET-LCc"/>
+                            <constraint firstAttribute="trailing" secondItem="6TP-kQ-KVn" secondAttribute="trailing" constant="8" id="mV2-mR-hS1"/>
+                        </constraints>
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="MIS LOGROS" id="Wzl-eI-tFD">
@@ -700,10 +838,13 @@
                         </barButtonItem>
                     </navigationItem>
                     <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="collectionLogros" destination="6TP-kQ-KVn" id="SNJ-Z4-dhu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8z6-HE-j2K" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2167" y="2580"/>
+            <point key="canvasLocation" x="-2167.1999999999998" y="2579.4602698650679"/>
         </scene>
         <!--ENTRENAMIENTO-->
         <scene sceneID="L85-wx-jj8">
@@ -1334,7 +1475,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gKL-Oz-2K7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-113" y="-142"/>
+            <point key="canvasLocation" x="-394" y="-749"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Fip-2P-8OK">
@@ -1354,7 +1495,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fdU-my-m9X" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1106" y="925"/>
+            <point key="canvasLocation" x="-1231" y="806"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ru5-ZI-KjA">
@@ -1515,10 +1656,11 @@
         <image name="rutina.png" width="180" height="180"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="LxJ-S8-J5P"/>
-        <segue reference="QZ5-2G-6uC"/>
-        <segue reference="Dby-qe-Muj"/>
-        <segue reference="gcL-0I-qbM"/>
-        <segue reference="Nhu-nn-43S"/>
+        <segue reference="61U-nu-bkD"/>
+        <segue reference="AbN-qC-aTM"/>
+        <segue reference="CNO-oW-Hza"/>
+        <segue reference="C8d-So-Fc9"/>
+        <segue reference="kdC-Zi-CDi"/>
+        <segue reference="fcz-CX-2nT"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -8,8 +8,14 @@
 
 import UIKit
 
-class MisLogrosViewController: UIViewController {
+class MisLogrosViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
 
+    @IBOutlet var collectionLogros: UICollectionView!
+    
+    // Array Logros
+    var logros = ["logroUno", "logroDos"]
+    
+    
     // MARK: - DID LOAD
     
     override func viewDidLoad() {
@@ -36,6 +42,15 @@ class MisLogrosViewController: UIViewController {
     }
     
     
+    // MARK: - COLLECTION VIEW METHODS
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return self.logros.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: <#T##String#>, for: <#T##IndexPath#>)
+    }
+    
     // MARK: - BEFORE NAVIGATION
     
     
@@ -46,3 +61,13 @@ class MisLogrosViewController: UIViewController {
     }
     
 }
+
+
+
+class LogrosCollectionViewCell: UICollectionViewCell {
+    
+}
+
+
+
+
