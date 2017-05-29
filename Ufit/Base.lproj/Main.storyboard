@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="aGY-tP-Gi8">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="aGY-tP-Gi8">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -426,12 +426,25 @@ PARA RESTABLECER TU CONTRASEÑA</string>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg-main.png" translatesAutoresizingMaskIntoConstraints="NO" id="stM-kZ-RSu">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Czo-eP-fIY">
+                                <rect key="frame" x="36" y="84" width="303" height="563"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" red="0.86666666670000003" green="0.98823529409999999" blue="0.20392156859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="Czo-eP-fIY" firstAttribute="leading" secondItem="Mjt-Ag-RbV" secondAttribute="leadingMargin" constant="20" id="XgY-jl-fIc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Czo-eP-fIY" secondAttribute="trailing" constant="20" id="aaE-YF-IdT"/>
                             <constraint firstItem="stM-kZ-RSu" firstAttribute="centerX" secondItem="Mjt-Ag-RbV" secondAttribute="centerX" id="cwf-53-fpA"/>
+                            <constraint firstItem="Czo-eP-fIY" firstAttribute="top" secondItem="GpR-ak-Q0n" secondAttribute="bottom" constant="20" id="fzn-9b-VwE"/>
                             <constraint firstItem="stM-kZ-RSu" firstAttribute="height" secondItem="Mjt-Ag-RbV" secondAttribute="height" id="nVX-lc-Kbp"/>
                             <constraint firstItem="stM-kZ-RSu" firstAttribute="centerY" secondItem="Mjt-Ag-RbV" secondAttribute="centerY" id="siB-Ql-gbW"/>
+                            <constraint firstItem="5Go-yR-sFf" firstAttribute="top" secondItem="Czo-eP-fIY" secondAttribute="bottom" constant="20" id="zX0-ce-sFd"/>
                             <constraint firstItem="stM-kZ-RSu" firstAttribute="width" secondItem="Mjt-Ag-RbV" secondAttribute="width" id="zv1-Ib-e9U"/>
                         </constraints>
                     </view>
@@ -666,12 +679,37 @@ PARA RESTABLECER TU CONTRASEÑA</string>
                                     <constraint firstAttribute="width" constant="140" id="WVb-Av-Yfl"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UHQ-hL-aKI">
+                                <rect key="frame" x="142" y="266" width="92" height="28"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Check-In">
+                                        <attributes>
+                                            <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <font key="NSFont" size="23" name="Lato-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xyb-gR-Jf4">
+                                <rect key="frame" x="124" y="297" width="127" height="28"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Completado">
+                                        <attributes>
+                                            <color key="NSColor" red="0.86666666670000003" green="0.98823529409999999" blue="0.20392156859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="23" name="Lato-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DNq-n7-qFb">
-                                <rect key="frame" x="20" y="345" width="336" height="2"/>
+                                <rect key="frame" x="36" y="345" width="303" height="1"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="2" id="L0M-bz-KCm"/>
-                                    <constraint firstAttribute="width" constant="336" id="mrs-hl-JrM"/>
+                                    <constraint firstAttribute="height" constant="1" id="DyI-ab-oYh"/>
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9YD-YO-4DM">
@@ -690,32 +728,6 @@ PARA RESTABLECER TU CONTRASEÑA</string>
                                     <action selector="facebookShare:" destination="MT1-TU-dWL" eventType="touchUpInside" id="fex-jU-M9R"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UHQ-hL-aKI">
-                                <rect key="frame" x="142" y="266" width="92" height="28"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="Check-In">
-                                        <attributes>
-                                            <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <font key="NSFont" size="23" name="Lato-Regular"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xyb-gR-Jf4">
-                                <rect key="frame" x="123" y="297" width="129" height="28"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="Completado">
-                                        <attributes>
-                                            <color key="NSColor" red="0.86666666670000003" green="0.98823529409999999" blue="0.20392156859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="23" name="Lato-Bold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Compartir en" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LWj-Gx-mJI">
                                 <rect key="frame" x="153" y="355" width="70" height="15"/>
                                 <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="12"/>
@@ -741,23 +753,23 @@ PARA RESTABLECER TU CONTRASEÑA</string>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="1h1-WN-DKE" firstAttribute="centerX" secondItem="Xyb-gR-Jf4" secondAttribute="centerX" id="31K-9g-Ihq"/>
                             <constraint firstItem="UHQ-hL-aKI" firstAttribute="top" secondItem="UtW-yw-Qkh" secondAttribute="bottom" constant="20" id="3fp-yh-Ieu"/>
                             <constraint firstItem="UtW-yw-Qkh" firstAttribute="top" secondItem="j93-51-MjJ" secondAttribute="bottom" constant="42" id="7b0-h5-2i4"/>
+                            <constraint firstItem="LWj-Gx-mJI" firstAttribute="top" secondItem="DNq-n7-qFb" secondAttribute="bottom" constant="9" id="9ai-hX-cVO"/>
                             <constraint firstItem="1h1-WN-DKE" firstAttribute="top" secondItem="SCT-sH-cPw" secondAttribute="top" id="AoC-XA-hgX"/>
                             <constraint firstItem="9YD-YO-4DM" firstAttribute="centerX" secondItem="1h1-WN-DKE" secondAttribute="centerX" id="BXT-Q8-KjS"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="DNq-n7-qFb" secondAttribute="trailing" constant="20" id="Chq-3h-aM0"/>
                             <constraint firstItem="LWj-Gx-mJI" firstAttribute="centerX" secondItem="SCT-sH-cPw" secondAttribute="centerX" id="D9L-sS-EYO"/>
                             <constraint firstItem="wMz-gH-6zN" firstAttribute="top" secondItem="9YD-YO-4DM" secondAttribute="bottom" constant="15" id="H2y-FX-Wa7"/>
-                            <constraint firstItem="Xyb-gR-Jf4" firstAttribute="top" secondItem="UHQ-hL-aKI" secondAttribute="bottom" constant="3" id="NGZ-Q5-afd"/>
+                            <constraint firstItem="Xyb-gR-Jf4" firstAttribute="centerX" secondItem="SCT-sH-cPw" secondAttribute="centerX" id="HGT-Mh-6YO"/>
                             <constraint firstItem="UHQ-hL-aKI" firstAttribute="centerX" secondItem="1h1-WN-DKE" secondAttribute="centerX" id="PJF-PN-E4O"/>
                             <constraint firstItem="wMz-gH-6zN" firstAttribute="centerX" secondItem="1h1-WN-DKE" secondAttribute="centerX" id="TYR-FY-pJ9"/>
-                            <constraint firstItem="LWj-Gx-mJI" firstAttribute="top" secondItem="DNq-n7-qFb" secondAttribute="bottom" constant="8" id="X7Z-SK-CFC"/>
-                            <constraint firstItem="DNq-n7-qFb" firstAttribute="centerX" secondItem="SCT-sH-cPw" secondAttribute="centerX" id="YEK-Aj-JpL"/>
                             <constraint firstItem="9YD-YO-4DM" firstAttribute="top" secondItem="LWj-Gx-mJI" secondAttribute="bottom" constant="28" id="bQD-79-eTA"/>
-                            <constraint firstItem="1h1-WN-DKE" firstAttribute="leading" secondItem="Xyb-gR-Jf4" secondAttribute="trailing" constant="-252" id="c3D-gp-BUo"/>
+                            <constraint firstItem="DNq-n7-qFb" firstAttribute="leading" secondItem="SCT-sH-cPw" secondAttribute="leadingMargin" constant="20" id="cw3-tX-3g2"/>
+                            <constraint firstItem="Xyb-gR-Jf4" firstAttribute="top" secondItem="UHQ-hL-aKI" secondAttribute="bottom" constant="3" id="edl-WW-h8q"/>
                             <constraint firstItem="UtW-yw-Qkh" firstAttribute="centerX" secondItem="SCT-sH-cPw" secondAttribute="centerX" id="f96-ej-uLM"/>
                             <constraint firstItem="UtW-yw-Qkh" firstAttribute="centerX" secondItem="1h1-WN-DKE" secondAttribute="centerX" id="i5y-7Q-6SF"/>
-                            <constraint firstItem="DNq-n7-qFb" firstAttribute="top" secondItem="Xyb-gR-Jf4" secondAttribute="bottom" constant="20" id="khj-Nz-qQC"/>
+                            <constraint firstItem="DNq-n7-qFb" firstAttribute="top" secondItem="Xyb-gR-Jf4" secondAttribute="bottom" constant="20" id="ivO-v3-1G5"/>
                             <constraint firstItem="1h1-WN-DKE" firstAttribute="bottom" secondItem="JR5-G4-bmn" secondAttribute="top" id="nwj-tL-XJH"/>
                             <constraint firstItem="1h1-WN-DKE" firstAttribute="leading" secondItem="SCT-sH-cPw" secondAttribute="leading" id="t56-1E-Vl2"/>
                         </constraints>
@@ -1222,7 +1234,7 @@ PARA RESTABLECER TU CONTRASEÑA</string>
                                         <rect key="frame" x="0.0" y="28" width="375" height="77"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="oaK-sO-Bt0" id="dQZ-1g-dF2">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="76"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="76.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qqR-Mi-YdB">
@@ -1401,13 +1413,57 @@ PARA RESTABLECER TU CONTRASEÑA</string>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg-main.png" translatesAutoresizingMaskIntoConstraints="NO" id="7jO-Kj-7WB">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="UUb-zt-9n6">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <view key="tableFooterView" contentMode="scaleToFill" id="RD9-5y-oWS">
+                                    <rect key="frame" x="0.0" y="72" width="375" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <color key="tintColor" red="0.86666666670000003" green="0.98823529409999999" blue="0.20392156859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </view>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="CeldaPerfil" textLabel="ATJ-WN-eCI" style="IBUITableViewCellStyleDefault" id="5vo-yi-kWH">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5vo-yi-kWH" id="PDy-tS-jil">
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ATJ-WN-eCI">
+                                                    <rect key="frame" x="15" y="0.0" width="325" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="highlightedColor" red="0.86666666670000003" green="0.98823529409999999" blue="0.20392156859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <segue destination="J7D-CO-miq" kind="show" identifier="detallePerfilSegue" id="StY-UM-2ny"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="LlF-zw-flL" id="4qq-VX-e0R"/>
+                                    <outlet property="delegate" destination="LlF-zw-flL" id="Osp-lG-Vc0"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="UUb-zt-9n6" firstAttribute="leading" secondItem="7jO-Kj-7WB" secondAttribute="leading" id="0g7-yC-Zix"/>
                             <constraint firstItem="7jO-Kj-7WB" firstAttribute="width" secondItem="KMR-C1-Bpg" secondAttribute="width" id="Jkt-T2-Fqw"/>
                             <constraint firstItem="7jO-Kj-7WB" firstAttribute="height" secondItem="KMR-C1-Bpg" secondAttribute="height" id="RWm-FW-b3v"/>
                             <constraint firstItem="7jO-Kj-7WB" firstAttribute="centerX" secondItem="KMR-C1-Bpg" secondAttribute="centerX" id="dPC-c8-oOa"/>
+                            <constraint firstItem="UUb-zt-9n6" firstAttribute="bottom" secondItem="nGJ-9z-HtP" secondAttribute="top" id="eDs-jd-c2z"/>
                             <constraint firstItem="7jO-Kj-7WB" firstAttribute="centerY" secondItem="KMR-C1-Bpg" secondAttribute="centerY" id="fdd-kj-Rjo"/>
+                            <constraint firstItem="UUb-zt-9n6" firstAttribute="top" secondItem="fsi-67-VGf" secondAttribute="bottom" id="obM-wr-yZZ"/>
+                            <constraint firstItem="UUb-zt-9n6" firstAttribute="trailing" secondItem="7jO-Kj-7WB" secondAttribute="trailing" id="xWH-mQ-398"/>
                         </constraints>
                     </view>
                     <toolbarItems/>
@@ -1432,10 +1488,38 @@ PARA RESTABLECER TU CONTRASEÑA</string>
                         </barButtonItem>
                     </navigationItem>
                     <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="tablaPerfil" destination="UUb-zt-9n6" id="gm9-7k-yUa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FQ0-8P-6ww" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5905" y="2564"/>
+            <point key="canvasLocation" x="5904.8000000000002" y="2563.2683658170918"/>
+        </scene>
+        <!--Detalle Perfil View Controller-->
+        <scene sceneID="0jT-Yb-5Xu">
+            <objects>
+                <viewController id="J7D-CO-miq" customClass="DetallePerfilViewController" customModule="Ufit" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RvS-oD-lzt"/>
+                        <viewControllerLayoutGuide type="bottom" id="Wde-Mg-iZQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zwh-3l-RFe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg-main.png" translatesAutoresizingMaskIntoConstraints="NO" id="eJc-ar-Iel">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="5w8-1Y-fTj"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WiW-fS-2W1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5905" y="3273"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="b8x-dr-VPw">
@@ -1656,11 +1740,11 @@ PARA RESTABLECER TU CONTRASEÑA</string>
         <image name="rutina.png" width="180" height="180"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="61U-nu-bkD"/>
-        <segue reference="AbN-qC-aTM"/>
-        <segue reference="CNO-oW-Hza"/>
-        <segue reference="C8d-So-Fc9"/>
-        <segue reference="kdC-Zi-CDi"/>
-        <segue reference="fcz-CX-2nT"/>
+        <segue reference="LxJ-S8-J5P"/>
+        <segue reference="Jk3-0e-9Ku"/>
+        <segue reference="Nhu-nn-43S"/>
+        <segue reference="QZ5-2G-6uC"/>
+        <segue reference="gcL-0I-qbM"/>
+        <segue reference="Dby-qe-Muj"/>
     </inferredMetricsTieBreakers>
 </document>
