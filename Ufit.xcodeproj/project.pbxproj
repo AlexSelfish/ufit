@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B929BFF81ED8ABF900307E5E /* RestablecerPswdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B929BFF71ED8ABF900307E5E /* RestablecerPswdViewController.swift */; };
+		B931541A1EDCDA34003AD007 /* DetallePerfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93154191EDCDA34003AD007 /* DetallePerfilViewController.swift */; };
 		B987A1AB1ED74CAB001481F9 /* EntrenamientoLibreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B987A1AA1ED74CAB001481F9 /* EntrenamientoLibreViewController.swift */; };
 		B9A526C71ED4C0B4009440E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A526C61ED4C0B4009440E0 /* AppDelegate.swift */; };
 		B9A526C91ED4C0B4009440E0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A526C81ED4C0B4009440E0 /* ViewController.swift */; };
@@ -79,6 +80,7 @@
 
 /* Begin PBXFileReference section */
 		B929BFF71ED8ABF900307E5E /* RestablecerPswdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestablecerPswdViewController.swift; sourceTree = "<group>"; };
+		B93154191EDCDA34003AD007 /* DetallePerfilViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetallePerfilViewController.swift; sourceTree = "<group>"; };
 		B987A1AA1ED74CAB001481F9 /* EntrenamientoLibreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntrenamientoLibreViewController.swift; sourceTree = "<group>"; };
 		B9A526C31ED4C0B4009440E0 /* Ufit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ufit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9A526C61ED4C0B4009440E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -204,6 +206,7 @@
 				B9BF93011ED5E94E00A1A6E7 /* DetalleClaseViewController.swift */,
 				B9A527391ED4DD52009440E0 /* NutricionViewController.swift */,
 				B9A5273E1ED4DD52009440E0 /* PerfilViewController.swift */,
+				B93154191EDCDA34003AD007 /* DetallePerfilViewController.swift */,
 				B9A5273A1ED4DD52009440E0 /* AyudaViewController.swift */,
 				B9A527401ED4DD52009440E0 /* RecomendarViewController.swift */,
 				B9A526F51ED4C0CB009440E0 /* SWRevealViewController.h */,
@@ -387,6 +390,7 @@
 				TargetAttributes = {
 					B9A526C21ED4C0B4009440E0 = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 74Z4HW96MW;
 						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
@@ -487,6 +491,7 @@
 				B9A526C91ED4C0B4009440E0 /* ViewController.swift in Sources */,
 				B9A526C71ED4C0B4009440E0 /* AppDelegate.swift in Sources */,
 				B9A527411ED4DD52009440E0 /* NutricionViewController.swift in Sources */,
+				B931541A1EDCDA34003AD007 /* DetallePerfilViewController.swift in Sources */,
 				B9A527501ED4ECAC009440E0 /* SwiftyJSON.swift in Sources */,
 				B9A527481ED4DD52009440E0 /* RecomendarViewController.swift in Sources */,
 				B9A527421ED4DD52009440E0 /* AyudaViewController.swift in Sources */,
@@ -575,6 +580,7 @@
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -626,6 +632,7 @@
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -654,6 +661,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 74Z4HW96MW;
 				INFOPLIST_FILE = Ufit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ahauniverso.Ufit;
@@ -669,6 +677,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 74Z4HW96MW;
 				INFOPLIST_FILE = Ufit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ahauniverso.Ufit;

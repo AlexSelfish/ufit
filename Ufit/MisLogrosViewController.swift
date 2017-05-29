@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MisLogrosViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+class MisLogrosViewController: UIViewController{ //UICollectionViewDelegate, UICollectionViewDataSource {
 
     @IBOutlet var collectionLogros: UICollectionView!
     
@@ -45,10 +45,6 @@ class MisLogrosViewController: UIViewController, UICollectionViewDelegate, UICol
     // MARK: - COLLECTION VIEW METHODS
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return self.logros.count
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: <#T##String#>, for: <#T##IndexPath#>)
     }
     
     // MARK: - BEFORE NAVIGATION
