@@ -10,6 +10,12 @@
 		B929BFF81ED8ABF900307E5E /* RestablecerPswdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B929BFF71ED8ABF900307E5E /* RestablecerPswdViewController.swift */; };
 		B931541A1EDCDA34003AD007 /* DetallePerfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93154191EDCDA34003AD007 /* DetallePerfilViewController.swift */; };
 		B987A1AB1ED74CAB001481F9 /* EntrenamientoLibreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B987A1AA1ED74CAB001481F9 /* EntrenamientoLibreViewController.swift */; };
+		B99656531EDDD96B009F36C7 /* 0.png in Resources */ = {isa = PBXBuildFile; fileRef = B996564E1EDDD96B009F36C7 /* 0.png */; };
+		B99656541EDDD96B009F36C7 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = B996564F1EDDD96B009F36C7 /* 1.png */; };
+		B99656551EDDD96B009F36C7 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = B99656501EDDD96B009F36C7 /* 2.png */; };
+		B99656561EDDD96B009F36C7 /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = B99656511EDDD96B009F36C7 /* 3.png */; };
+		B99656571EDDD96B009F36C7 /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = B99656521EDDD96B009F36C7 /* 4.png */; };
+		B99656591EDDDA57009F36C7 /* ufitlogo.png in Resources */ = {isa = PBXBuildFile; fileRef = B99656581EDDDA57009F36C7 /* ufitlogo.png */; };
 		B9A526C71ED4C0B4009440E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A526C61ED4C0B4009440E0 /* AppDelegate.swift */; };
 		B9A526C91ED4C0B4009440E0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A526C81ED4C0B4009440E0 /* ViewController.swift */; };
 		B9A526CC1ED4C0B4009440E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9A526CA1ED4C0B4009440E0 /* Main.storyboard */; };
@@ -36,11 +42,6 @@
 		B9A527291ED4C16F009440E0 /* logo-ufit.png in Resources */ = {isa = PBXBuildFile; fileRef = B9A5270C1ED4C16F009440E0 /* logo-ufit.png */; };
 		B9A5272A1ED4C16F009440E0 /* bg-main.png in Resources */ = {isa = PBXBuildFile; fileRef = B9A5270E1ED4C16F009440E0 /* bg-main.png */; };
 		B9A5272B1ED4C16F009440E0 /* main-menu.png in Resources */ = {isa = PBXBuildFile; fileRef = B9A5270F1ED4C16F009440E0 /* main-menu.png */; };
-		B9A5272C1ED4C16F009440E0 /* 0.png in Resources */ = {isa = PBXBuildFile; fileRef = B9A527111ED4C16F009440E0 /* 0.png */; };
-		B9A5272D1ED4C16F009440E0 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = B9A527121ED4C16F009440E0 /* 1.png */; };
-		B9A5272E1ED4C16F009440E0 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = B9A527131ED4C16F009440E0 /* 2.png */; };
-		B9A5272F1ED4C16F009440E0 /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = B9A527141ED4C16F009440E0 /* 3.png */; };
-		B9A527301ED4C16F009440E0 /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = B9A527151ED4C16F009440E0 /* 4.png */; };
 		B9A527311ED4C16F009440E0 /* bg-menu.png in Resources */ = {isa = PBXBuildFile; fileRef = B9A527161ED4C16F009440E0 /* bg-menu.png */; };
 		B9A527321ED4C16F009440E0 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = B9A527171ED4C16F009440E0 /* logo.png */; };
 		B9A527331ED4C16F009440E0 /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = B9A527181ED4C16F009440E0 /* menu.png */; };
@@ -82,6 +83,12 @@
 		B929BFF71ED8ABF900307E5E /* RestablecerPswdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestablecerPswdViewController.swift; sourceTree = "<group>"; };
 		B93154191EDCDA34003AD007 /* DetallePerfilViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetallePerfilViewController.swift; sourceTree = "<group>"; };
 		B987A1AA1ED74CAB001481F9 /* EntrenamientoLibreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntrenamientoLibreViewController.swift; sourceTree = "<group>"; };
+		B996564E1EDDD96B009F36C7 /* 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 0.png; sourceTree = "<group>"; };
+		B996564F1EDDD96B009F36C7 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		B99656501EDDD96B009F36C7 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
+		B99656511EDDD96B009F36C7 /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
+		B99656521EDDD96B009F36C7 /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4.png; sourceTree = "<group>"; };
+		B99656581EDDDA57009F36C7 /* ufitlogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ufitlogo.png; sourceTree = "<group>"; };
 		B9A526C31ED4C0B4009440E0 /* Ufit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ufit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9A526C61ED4C0B4009440E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B9A526C81ED4C0B4009440E0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -116,11 +123,6 @@
 		B9A5270C1ED4C16F009440E0 /* logo-ufit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo-ufit.png"; sourceTree = "<group>"; };
 		B9A5270E1ED4C16F009440E0 /* bg-main.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg-main.png"; sourceTree = "<group>"; };
 		B9A5270F1ED4C16F009440E0 /* main-menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "main-menu.png"; sourceTree = "<group>"; };
-		B9A527111ED4C16F009440E0 /* 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 0.png; sourceTree = "<group>"; };
-		B9A527121ED4C16F009440E0 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
-		B9A527131ED4C16F009440E0 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
-		B9A527141ED4C16F009440E0 /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
-		B9A527151ED4C16F009440E0 /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4.png; sourceTree = "<group>"; };
 		B9A527161ED4C16F009440E0 /* bg-menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg-menu.png"; sourceTree = "<group>"; };
 		B9A527171ED4C16F009440E0 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		B9A527181ED4C16F009440E0 /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu.png; sourceTree = "<group>"; };
@@ -299,6 +301,7 @@
 		B9A5270D1ED4C16F009440E0 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				B99656581EDDDA57009F36C7 /* ufitlogo.png */,
 				B9BF93031ED609DA00A1A6E7 /* chackin.png */,
 				B9A5270E1ED4C16F009440E0 /* bg-main.png */,
 				B9A5270F1ED4C16F009440E0 /* main-menu.png */,
@@ -309,11 +312,11 @@
 		B9A527101ED4C16F009440E0 /* Menu */ = {
 			isa = PBXGroup;
 			children = (
-				B9A527111ED4C16F009440E0 /* 0.png */,
-				B9A527121ED4C16F009440E0 /* 1.png */,
-				B9A527131ED4C16F009440E0 /* 2.png */,
-				B9A527141ED4C16F009440E0 /* 3.png */,
-				B9A527151ED4C16F009440E0 /* 4.png */,
+				B996564E1EDDD96B009F36C7 /* 0.png */,
+				B996564F1EDDD96B009F36C7 /* 1.png */,
+				B99656501EDDD96B009F36C7 /* 2.png */,
+				B99656511EDDD96B009F36C7 /* 3.png */,
+				B99656521EDDD96B009F36C7 /* 4.png */,
 				B9A527161ED4C16F009440E0 /* bg-menu.png */,
 				B9A527171ED4C16F009440E0 /* logo.png */,
 				B9A527181ED4C16F009440E0 /* menu.png */,
@@ -432,33 +435,34 @@
 			buildActionMask = 2147483647;
 			files = (
 				B9A527331ED4C16F009440E0 /* menu.png in Resources */,
-				B9A5272C1ED4C16F009440E0 /* 0.png in Resources */,
 				B9A527261ED4C16F009440E0 /* rutina.png in Resources */,
+				B99656551EDDD96B009F36C7 /* 2.png in Resources */,
 				B9A5272A1ED4C16F009440E0 /* bg-main.png in Resources */,
 				B9A527241ED4C16F009440E0 /* launch.png in Resources */,
 				B9A527341ED4C16F009440E0 /* profile-placeholder.png in Resources */,
 				B9A527321ED4C16F009440E0 /* logo.png in Resources */,
 				B9A527201ED4C16F009440E0 /* Lato-Italic.ttf in Resources */,
+				B99656591EDDDA57009F36C7 /* ufitlogo.png in Resources */,
 				B9A5271A1ED4C16F009440E0 /* Lato-Black.ttf in Resources */,
 				B9A527311ED4C16F009440E0 /* bg-menu.png in Resources */,
 				B9A527271ED4C16F009440E0 /* bg-login.png in Resources */,
 				B9A527281ED4C16F009440E0 /* boton-ingresar.png in Resources */,
 				B9A5271C1ED4C16F009440E0 /* Lato-Bold.ttf in Resources */,
 				B9A527291ED4C16F009440E0 /* logo-ufit.png in Resources */,
+				B99656541EDDD96B009F36C7 /* 1.png in Resources */,
+				B99656561EDDD96B009F36C7 /* 3.png in Resources */,
 				B9A527211ED4C16F009440E0 /* Lato-Light.ttf in Resources */,
 				B9A527251ED4C16F009440E0 /* libre.png in Resources */,
 				B9A526D11ED4C0B4009440E0 /* LaunchScreen.storyboard in Resources */,
 				B9A5271B1ED4C16F009440E0 /* Lato-BlackItalic.ttf in Resources */,
 				B9A5272B1ED4C16F009440E0 /* main-menu.png in Resources */,
 				B9A526CE1ED4C0B4009440E0 /* Assets.xcassets in Resources */,
-				B9A527301ED4C16F009440E0 /* 4.png in Resources */,
 				B9A527221ED4C16F009440E0 /* Lato-LightItalic.ttf in Resources */,
 				B9A5271F1ED4C16F009440E0 /* Lato-HairlineItalic.ttf in Resources */,
-				B9A5272E1ED4C16F009440E0 /* 2.png in Resources */,
+				B99656531EDDD96B009F36C7 /* 0.png in Resources */,
 				B9A5271D1ED4C16F009440E0 /* Lato-BoldItalic.ttf in Resources */,
-				B9A5272F1ED4C16F009440E0 /* 3.png in Resources */,
+				B99656571EDDD96B009F36C7 /* 4.png in Resources */,
 				B9A527231ED4C16F009440E0 /* Lato-Regular.ttf in Resources */,
-				B9A5272D1ED4C16F009440E0 /* 1.png in Resources */,
 				B9A5271E1ED4C16F009440E0 /* Lato-Hairline.ttf in Resources */,
 				B9A526CC1ED4C0B4009440E0 /* Main.storyboard in Resources */,
 				B9BF93041ED609DA00A1A6E7 /* chackin.png in Resources */,
